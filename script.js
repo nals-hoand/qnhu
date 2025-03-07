@@ -1,6 +1,8 @@
 document.getElementById("magicButton").addEventListener("click", function () {
     let surpriseDiv = document.getElementById("surprise");
     surpriseDiv.classList.remove("hidden");
+    // scroll to the bottom
+    window.scrollTo(0, document.body.scrollHeight);
 
     // Giới hạn số lượng trái tim bay lên
     for (let i = 0; i < 10; i++) {
