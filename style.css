@@ -43,7 +43,7 @@ button:hover {
 /* Responsive cho điện thoại */
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 20px;
+        font-size: 37px;
     }
     p {
         font-size: 16px;
@@ -64,4 +64,47 @@ button:hover {
 @keyframes float {
     0% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(-800px); opacity: 0; }
+}
+
+.hidden {
+    display: none;
+}
+
+.surprise-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff4081;
+    text-align: center;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Hiệu ứng phát sáng */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #ff66b2; }
+    100% { text-shadow: 0 0 20px #ff1493; }
+}
+
+/* Hiệu ứng trái tim bay */
+.heart {
+    position: fixed;
+    color: red;
+    font-size: 24px;
+    animation: float 5s linear forwards;
+    z-index: 9999;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-800px); opacity: 0; }
+}
+
+/* Định vị pháo hoa */
+#fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 40vh; /* Giới hạn chỉ nổ ở phần trên */
+    pointer-events: none;
+    z-index: 10;
 }
