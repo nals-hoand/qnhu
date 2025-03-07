@@ -5,7 +5,7 @@ document.getElementById("magicButton").addEventListener("click", function () {
     window.scrollTo(0, document.body.scrollHeight);
 
     // Giới hạn số lượng trái tim bay lên
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 1000; i++) {
         setTimeout(() => {
             let heart = document.createElement("div");
             heart.classList.add("heart");
