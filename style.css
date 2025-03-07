@@ -1,25 +1,67 @@
+/* Thiết lập cơ bản */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #ffccff;
+    background-color: #ffe6f2;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 .container {
     padding: 20px;
+    max-width: 90%;
+    margin: auto;
 }
 h1 {
-    color: #ff66b2;
+    color: #ff4081;
+    font-size: 24px;
 }
 img {
-    width: 200px;
+    width: 100%;
+    max-width: 350px;
     border-radius: 10px;
 }
+p {
+    font-size: 18px;
+    color: #ff66b2;
+    padding: 10px;
+}
 button {
-    padding: 10px 20px;
+    padding: 15px 25px;
     background-color: #ff4081;
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 button:hover {
     background-color: #e91e63;
+}
+
+/* Responsive cho điện thoại */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
+/* Hiệu ứng trái tim */
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 24px;
+    animation: float 5s linear infinite;
+}
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-800px); opacity: 0; }
 }
